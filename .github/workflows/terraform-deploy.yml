@@ -16,7 +16,6 @@ jobs:
   terraform:
     runs-on: ubuntu-latest
 
-    # Solo se ejecuta si la rama es master y el usuario eligió "yes"
     if: github.ref == 'refs/heads/master' && github.event.inputs.ejecutar == 'yes'
 
     steps:
